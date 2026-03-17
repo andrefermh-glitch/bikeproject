@@ -373,7 +373,7 @@ h1, h2, h3, h4 {
   max-width: var(--max-width);
   width: 100%;
   margin: 0 auto;
-  padding: var(--space-xxl) var(--space-lg) var(--space-xl);
+  padding: 3rem var(--space-lg) var(--space-xl);
 }
 
 .hero__eyebrow {
