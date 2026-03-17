@@ -954,7 +954,102 @@ h1, h2, h3, h4 {
   margin-top: var(--space-sm);
 }
 
-/* === 16. MEDIA QUERIES =================================== */
+/* === 16. CÓMO COMPRAR ==================================== */
+
+#como-comprar {
+  padding: var(--space-xxl) 0;
+  background: #0a0a0a;
+  border-top: 1px solid var(--color-border);
+  scroll-margin-top: 64px;
+}
+
+.comprar__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+  text-align: center;
+}
+
+.comprar__intro {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-xl);
+}
+
+.steps {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0;
+  margin-bottom: var(--space-xl);
+  flex-wrap: wrap;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  max-width: 160px;
+  flex: 1 1 140px;
+}
+
+.step__number {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  color: #000;
+  font-family: var(--font-heading);
+  font-weight: 900;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.step__icon {
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.step__title {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-white);
+  margin: 0;
+}
+
+.step__desc {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.step__arrow {
+  font-size: 1.8rem;
+  color: var(--color-accent);
+  padding: 0 0.25rem;
+  margin-top: 12px;
+  align-self: flex-start;
+  flex-shrink: 0;
+}
+
+.comprar__cta {
+  display: flex;
+  gap: var(--space-md);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* === 17. MEDIA QUERIES =================================== */
 
 /* Tablet */
 @media (max-width: 1024px) {
@@ -1012,11 +1107,17 @@ h1, h2, h3, h4 {
   .page-hero__inner,
   .catalogue-section__inner,
   .contacto__inner,
+  .comprar__inner,
   .filter-bar,
   .footer__inner {
     padding-left: var(--space-md);
     padding-right: var(--space-md);
   }
+
+  .steps { flex-direction: column; align-items: center; gap: var(--space-sm); }
+  .step { max-width: 280px; flex-direction: row; text-align: left; gap: 1rem; }
+  .step__icon { display: none; }
+  .step__arrow { transform: rotate(90deg); margin: 0; align-self: center; }
 
   .category-grid { grid-template-columns: 1fr 1fr; gap: var(--space-sm); }
   .manifesto__grid { grid-template-columns: 1fr; }
