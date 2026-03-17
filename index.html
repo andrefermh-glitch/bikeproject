@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Catálogo de bicicletas y componentes de alto rendimiento — Bicis Chinas Pro. Carbono premium directo del origen.">
+  <title>Bicis Chinas Pro — Catálogo de alto rendimiento</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,900;1,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-home">
+
+  <!-- ===================================================
+       HEADER / NAVEGACIÓN
+       =================================================== -->
+  <header class="site-header">
+    <nav class="nav" role="navigation" aria-label="Navegación principal">
+      <a href="index.html" class="nav__logo">Bicis Chinas <span>Pro</span></a>
+
+      <ul class="nav__links" role="list">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+
+      <button class="nav__hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Menú móvil -->
+  <nav class="nav__mobile-menu" id="mobileMenu" aria-label="Menú móvil" role="navigation">
+    <a href="index.html">Inicio</a>
+    <a href="catalogo.html">Catálogo</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <main>
+
+    <!-- ===================================================
+         SECCIÓN 1: HERO
+         =================================================== -->
+    <section id="hero" aria-label="Presentación de la marca">
+      <div class="hero__content">
+        <p class="hero__eyebrow">Componentes premium · Directo del origen</p>
+        <h1 class="hero__headline">
+          Rendimiento<br>de <em>élite.</em><br>Precio honesto.
+        </h1>
+        <p class="hero__subtext">
+          Bicicletas de carbono y componentes de alta especificación, seleccionados directamente de los fabricantes chinos que equipan a los mejores equipos del mundo.
+        </p>
+        <div class="hero__cta">
+          <a href="catalogo.html" class="btn btn--primary">Ver catálogo completo</a>
+          <a href="#contacto" class="btn btn--outline">Consultar disponibilidad</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         SECCIÓN 2: MANIFIESTO
+         =================================================== -->
+    <section id="manifesto" aria-label="Propuesta de valor">
+      <div class="manifesto__grid">
+
+        <div class="pillar">
+          <span class="pillar__icon" aria-hidden="true">◆</span>
+          <h3>Carbono T800</h3>
+          <p>Cuadros fabricados con fibra de carbono de módulo alto, los mismos materiales que usan las marcas europeas de $10,000 USD.</p>
+        </div>
+
+        <div class="pillar">
+          <span class="pillar__icon" aria-hidden="true">◈</span>
+          <h3>Peso de competición</h3>
+          <p>Sub-800g en cuadros aero. Sub-1,500g en ruedas de carbono. Especificaciones verificadas, no marketing.</p>
+        </div>
+
+        <div class="pillar">
+          <span class="pillar__icon" aria-hidden="true">⬡</span>
+          <h3>Compatibilidad total</h3>
+          <p>Shimano, SRAM, Campagnolo. Di2 listo. Estándares modernos: BB386, T47, thru-axle 12mm.</p>
+        </div>
+
+        <div class="pillar">
+          <span class="pillar__icon" aria-hidden="true">▲</span>
+          <h3>Precio directo</h3>
+          <p>Sin distribuidores intermedios, sin markup de marca premium. Pagas por el componente, no por el logo.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================
+         SECCIÓN 3: CATEGORÍAS DESTACADAS
+         =================================================== -->
+    <section id="categorias" aria-labelledby="cat-titulo">
+      <div class="categorias__inner">
+        <h2 class="section-title" id="cat-titulo">Explora por categoría</h2>
+
+        <div class="category-grid">
+
+          <a class="category-card no-img" href="catalogo.html?cat=bicicletas-ruta" aria-label="Bicicletas de ruta">
+            <img src="https://www.yoeleo.com/cdn/shop/files/YOELEO-CHUAN-R12.jpg?v=1757800969&width=600" alt="Bicicleta de ruta de carbono" loading="lazy">
+            <span class="category-card__label">Bicicletas de ruta</span>
+          </a>
+
+          <a class="category-card no-img" href="catalogo.html?cat=bicicletas-montana" aria-label="Bicicletas de montaña">
+            <img src="https://xdsbikeco.com/cdn/shop/products/Rocket520mattblack.jpg?v=1749876469&width=600" alt="Bicicleta de montaña" loading="lazy">
+            <span class="category-card__label">Bicicletas de montaña</span>
+          </a>
+
+          <a class="category-card no-img" href="catalogo.html?cat=cuadros-carbono" aria-label="Cuadros de carbono">
+            <img src="https://winspace.com.au/cdn/shop/files/IMG_7699.jpg?v=1747377285&width=600" alt="Cuadro de carbono aero" loading="lazy">
+            <span class="category-card__label">Cuadros de carbono</span>
+          </a>
+
+          <a class="category-card no-img" href="catalogo.html?cat=grupos-transmision" aria-label="Grupos y transmisión">
+            <img src="images/cat-grupos.jpg" alt="Grupo de transmisión" loading="lazy">
+            <span class="category-card__label">Grupos y transmisión</span>
+          </a>
+
+          <a class="category-card no-img" href="catalogo.html?cat=ruedas-llantas" aria-label="Ruedas y llantas">
+            <img src="https://www.yoeleo.com/cdn/shop/files/QIANKUN.jpg?v=1757768861&width=600" alt="Ruedas de carbono" loading="lazy">
+            <span class="category-card__label">Ruedas y llantas</span>
+          </a>
+
+          <a class="category-card no-img" href="catalogo.html?cat=manubrios-potencias" aria-label="Manubrios y potencias">
+            <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024080215481350529/cms/image/090fccb6-2367-4b4d-9660-d73e7679f9e5.jpg" alt="Manillar aero de carbono" loading="lazy">
+            <span class="category-card__label">Manubrios y potencias</span>
+          </a>
+
+          <a class="category-card no-img" href="catalogo.html?cat=sillines-tijas" aria-label="Sillines y tijas">
+            <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024080215481350529/cms/image/e153fb81-94e4-4fcf-a5bc-e9e55629d48a.jpg" alt="Sillín de carrera" loading="lazy">
+            <span class="category-card__label">Sillines y tijas</span>
+          </a>
+
+          <a class="category-card no-img" href="catalogo.html?cat=accesorios" aria-label="Accesorios y componentes varios">
+            <img src="https://www.yoeleo.com/cdn/shop/files/20251011-154040.png?v=1760168588&width=600" alt="Accesorios ciclismo" loading="lazy">
+            <span class="category-card__label">Accesorios y componentes</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         SECCIÓN 4: PRODUCTOS DESTACADOS
+         =================================================== -->
+    <section id="destacados" aria-labelledby="dest-titulo">
+      <div class="destacados__inner">
+        <h2 class="section-title" id="dest-titulo">Productos destacados</h2>
+
+        <div class="product-grid">
+
+          <!-- Producto: Bicicleta de ruta R9 -->
+          <article
+            class="product-card"
+            data-category="bicicletas-ruta"
+            data-images="https://www.yoeleo.com/cdn/shop/files/YOELEO-CHUAN-R12.jpg?v=1757800969&width=1200,https://www.yoeleo.com/cdn/shop/files/Artboard_16.jpg?v=1757801245&width=1080"
+          >
+            <div class="card__gallery">
+              <div class="card__main-img-wrap">
+                <img
+                  class="card__main-img"
+                  src="https://www.yoeleo.com/cdn/shop/files/YOELEO-CHUAN-R12.jpg?v=1757800969&width=1200"
+                  alt="Bicicleta de ruta completa R9 — vista principal"
+                  loading="lazy"
+                >
+              </div>
+              <div class="card__thumbnails">
+                <button class="thumb active" data-src="https://www.yoeleo.com/cdn/shop/files/YOELEO-CHUAN-R12.jpg?v=1757800969&width=1200" aria-label="Vista 1">
+                  <img src="https://www.yoeleo.com/cdn/shop/files/YOELEO-CHUAN-R12.jpg?v=1757800969&width=1200" alt="">
+                </button>
+                <button class="thumb" data-src="https://www.yoeleo.com/cdn/shop/files/Artboard_16.jpg?v=1757801245&width=1080" aria-label="Vista 2">
+                  <img src="https://www.yoeleo.com/cdn/shop/files/Artboard_16.jpg?v=1757801245&width=1080" alt="">
+                </button>
+              </div>
+            </div>
+            <div class="card__info">
+              <span class="card__category-badge">Bicicletas de ruta</span>
+              <h3 class="card__name">Bicicleta de ruta completa R9</h3>
+              <ul class="card__specs">
+                <li><span class="spec-label">Material:</span> Carbono T700 aero</li>
+                <li><span class="spec-label">Talla:</span> 48 / 51 / 54 / 56 / 58 cm</li>
+                <li><span class="spec-label">Peso:</span> 7.4 kg (talla 54, con grupo)</li>
+                <li><span class="spec-label">Transmisión:</span> Shimano 105 R7000 11v</li>
+                <li><span class="spec-label">Frenos:</span> Disco hidráulico, thru-axle 12mm</li>
+              </ul>
+              <div class="card__price">
+                <span class="card__price-amount">USD $1,950</span>
+              </div>
+              <a href="#contacto" class="btn btn--card">Consultar disponibilidad</a>
+            </div>
+          </article>
+
+          <!-- Producto: Cuadro carbono T800 Aero -->
+          <article
+            class="product-card"
+            data-category="cuadros-carbono"
+            data-images="https://winspace.com.au/cdn/shop/files/IMG_7699.jpg?v=1747377285&width=3200,https://winspace.com.au/cdn/shop/files/23201752646559_.pic.jpg?v=1752646559&width=3200"
+          >
+            <div class="card__gallery">
+              <div class="card__main-img-wrap">
+                <img
+                  class="card__main-img"
+                  src="https://winspace.com.au/cdn/shop/files/IMG_7699.jpg?v=1747377285&width=3200"
+                  alt="Cuadro de carbono T800 Aero — vista principal"
+                  loading="lazy"
+                >
+              </div>
+              <div class="card__thumbnails">
+                <button class="thumb active" data-src="https://winspace.com.au/cdn/shop/files/IMG_7699.jpg?v=1747377285&width=3200" aria-label="Vista 1">
+                  <img src="https://winspace.com.au/cdn/shop/files/IMG_7699.jpg?v=1747377285&width=3200" alt="">
+                </button>
+                <button class="thumb" data-src="https://winspace.com.au/cdn/shop/files/23201752646559_.pic.jpg?v=1752646559&width=3200" aria-label="Vista 2">
+                  <img src="https://winspace.com.au/cdn/shop/files/23201752646559_.pic.jpg?v=1752646559&width=3200" alt="">
+                </button>
+              </div>
+            </div>
+            <div class="card__info">
+              <span class="card__category-badge">Cuadros de carbono</span>
+              <h3 class="card__name">Cuadro de carbono T800 Aero</h3>
+              <ul class="card__specs">
+                <li><span class="spec-label">Material:</span> Fibra de carbono T800 UD</li>
+                <li><span class="spec-label">Talla:</span> 47 / 50 / 53 / 56 cm</li>
+                <li><span class="spec-label">Peso:</span> 820 g (talla 53)</li>
+                <li><span class="spec-label">Eje de pedalier:</span> BB386EVO</li>
+                <li><span class="spec-label">Compatibilidad:</span> Di2 listo, thru-axle 12mm</li>
+              </ul>
+              <div class="card__price">
+                <span class="card__price-amount">USD $650</span>
+              </div>
+              <a href="#contacto" class="btn btn--card">Consultar disponibilidad</a>
+            </div>
+          </article>
+
+          <!-- Producto: Ruedas de carbono 50mm -->
+          <article
+            class="product-card"
+            data-category="ruedas-llantas"
+            data-images="https://www.yoeleo.com/cdn/shop/files/QIANKUN.jpg?v=1757768861&width=3000,https://www.yoeleo.com/cdn/shop/files/QianKun_wheels.jpg?v=1757818500&width=1200,https://winspace.com.au/cdn/shop/files/Kronos_Wheel_Front_Page.jpg?v=1747708619&width=3200"
+          >
+            <div class="card__gallery">
+              <div class="card__main-img-wrap">
+                <img
+                  class="card__main-img"
+                  src="https://www.yoeleo.com/cdn/shop/files/QIANKUN.jpg?v=1757768861&width=3000"
+                  alt="Ruedas de carbono tubeless 50mm — vista principal"
+                  loading="lazy"
+                >
+              </div>
+              <div class="card__thumbnails">
+                <button class="thumb active" data-src="https://www.yoeleo.com/cdn/shop/files/QIANKUN.jpg?v=1757768861&width=3000" aria-label="Vista 1">
+                  <img src="https://www.yoeleo.com/cdn/shop/files/QIANKUN.jpg?v=1757768861&width=3000" alt="">
+                </button>
+                <button class="thumb" data-src="https://www.yoeleo.com/cdn/shop/files/QianKun_wheels.jpg?v=1757818500&width=1200" aria-label="Vista 2">
+                  <img src="https://www.yoeleo.com/cdn/shop/files/QianKun_wheels.jpg?v=1757818500&width=1200" alt="">
+                </button>
+                <button class="thumb" data-src="https://winspace.com.au/cdn/shop/files/Kronos_Wheel_Front_Page.jpg?v=1747708619&width=3200" aria-label="Vista 3">
+                  <img src="https://winspace.com.au/cdn/shop/files/Kronos_Wheel_Front_Page.jpg?v=1747708619&width=3200" alt="">
+                </button>
+              </div>
+            </div>
+            <div class="card__info">
+              <span class="card__category-badge">Ruedas y llantas</span>
+              <h3 class="card__name">Ruedas de carbono tubeless 50mm</h3>
+              <ul class="card__specs">
+                <li><span class="spec-label">Material:</span> Carbono T700 prepreg</li>
+                <li><span class="spec-label">Perfil:</span> 50mm clincher / tubeless ready</li>
+                <li><span class="spec-label">Peso:</span> 1,480 g el par</li>
+                <li><span class="spec-label">Medida:</span> 700c, ancho interno 21mm</li>
+                <li><span class="spec-label">Compatibilidad:</span> Shimano / SRAM 11-12v, XDR</li>
+              </ul>
+              <div class="card__price">
+                <span class="card__price-amount">USD $730</span>
+              </div>
+              <a href="#contacto" class="btn btn--card">Consultar disponibilidad</a>
+            </div>
+          </article>
+
+        </div><!-- /.product-grid -->
+
+        <div class="destacados__cta">
+          <a href="catalogo.html" class="btn btn--outline">Ver todo el catálogo</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================
+         SECCIÓN 5: CONTACTO
+         =================================================== -->
+    <section id="contacto" aria-labelledby="contacto-titulo">
+      <div class="contacto__inner">
+        <h2 class="section-title" id="contacto-titulo">Contacto</h2>
+
+        <div class="contacto__layout">
+
+          <div class="contacto__info">
+            <p>
+              Solo manejamos catálogo, no ventas en línea. Para cotizaciones, disponibilidad de tallas y opciones de envío, contáctanos directamente. Respondemos dentro de 24 horas.
+            </p>
+            <div class="contacto__links">
+              <a
+                href="https://wa.me/521XXXXXXXXXX?text=Hola,%20me%20interesa%20un%20producto%20del%20cat%C3%A1logo%20de%20Bicis%20Chinas%20Pro"
+                class="btn btn--whatsapp"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Escribir por WhatsApp"
+              >
+                WhatsApp
+              </a>
+              <a href="mailto:ventas@bicischinaspro.com" class="btn btn--email">
+                ventas@bicischinaspro.com
+              </a>
+              <a
+                href="https://instagram.com/bicischinaspro"
+                class="btn btn--instagram"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Ver Instagram de Bicis Chinas Pro"
+              >
+                @bicischinaspro
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <form class="contacto__form" id="contactoForm" novalidate>
+
+              <div class="form__group">
+                <label for="nombre">Nombre</label>
+                <input
+                  id="nombre"
+                  name="nombre"
+                  type="text"
+                  placeholder="Tu nombre completo"
+                  autocomplete="name"
+                  required
+                >
+                <span class="field__error-msg" id="nombreError" role="alert">Por favor ingresa tu nombre.</span>
+              </div>
+
+              <div class="form__group">
+                <label for="correo">Correo electrónico</label>
+                <input
+                  id="correo"
+                  name="correo"
+                  type="email"
+                  placeholder="tu@correo.com"
+                  autocomplete="email"
+                  required
+                >
+                <span class="field__error-msg" id="correoError" role="alert">Por favor ingresa un correo válido.</span>
+              </div>
+
+              <div class="form__group">
+                <label for="mensaje">Mensaje</label>
+                <textarea
+                  id="mensaje"
+                  name="mensaje"
+                  rows="4"
+                  placeholder="¿Qué producto te interesa? ¿Tienes alguna pregunta sobre tallas o compatibilidad?"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn--primary">Enviar consulta</button>
+              <p class="form__note">* Solo catálogo de referencia — no realizamos ventas directas en línea.</p>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================================================
+       FOOTER
+       =================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer__inner">
+      <div class="footer__brand">Bicis Chinas <span>Pro</span></div>
+      <nav class="footer__nav" aria-label="Navegación de pie de página">
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <p class="footer__legal">
+        Solo catálogo de referencia. Precios en USD orientativos, sujetos a disponibilidad. Bicis Chinas Pro &copy; <span id="year"></span>
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

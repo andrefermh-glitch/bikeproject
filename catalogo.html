@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Catálogo completo de bicicletas y componentes de carbono — Bicis Chinas Pro. Filtra por categoría.">
+  <title>Catálogo — Bicis Chinas Pro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,900;1,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-catalogo">
+
+  <!-- ===================================================
+       HEADER / NAVEGACIÓN
+       =================================================== -->
+  <header class="site-header">
+    <nav class="nav" role="navigation" aria-label="Navegación principal">
+      <a href="index.html" class="nav__logo">Bicis Chinas <span>Pro</span></a>
+
+      <ul class="nav__links" role="list">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="index.html#contacto">Contacto</a></li>
+      </ul>
+
+      <button class="nav__hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Menú móvil -->
+  <nav class="nav__mobile-menu" id="mobileMenu" aria-label="Menú móvil" role="navigation">
+    <a href="index.html">Inicio</a>
+    <a href="catalogo.html">Catálogo</a>
+    <a href="index.html#contacto">Contacto</a>
+  </nav>
+
+  <main>
+
+    <!-- ===================================================
+         ENCABEZADO DE PÁGINA
+         =================================================== -->
+    <section class="page-hero" aria-label="Encabezado del catálogo">
+      <div class="page-hero__inner">
+        <h1>Catálogo completo</h1>
+        <p>Todos los productos disponibles. Filtra por categoría para encontrar lo que buscas.</p>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         BARRA DE FILTROS
+         =================================================== -->
+    <div class="filter-section" role="navigation" aria-label="Filtrar por categoría">
+      <div class="filter-bar" id="filterBar">
+        <button class="filter-btn active" data-filter="todos">Todos</button>
+        <button class="filter-btn" data-filter="bicicletas-ruta">Bicicletas de ruta</button>
+        <button class="filter-btn" data-filter="bicicletas-montana">Bicicletas de montaña</button>
+        <button class="filter-btn" data-filter="cuadros-carbono">Cuadros de carbono</button>
+        <button class="filter-btn" data-filter="grupos-transmision">Grupos y transmisión</button>
+        <button class="filter-btn" data-filter="ruedas-llantas">Ruedas y llantas</button>
+        <button class="filter-btn" data-filter="manubrios-potencias">Manubrios y potencias</button>
+        <button class="filter-btn" data-filter="sillines-tijas">Sillines y tijas</button>
+        <button class="filter-btn" data-filter="accesorios">Accesorios y componentes</button>
+      </div>
+    </div>
+
+    <!-- ===================================================
+         GRILLA DE PRODUCTOS
+         =================================================== -->
+    <section class="catalogue-section" aria-label="Productos">
+      <div class="catalogue-section__inner">
+
+        <div class="product-grid" id="productGrid">
+
+          <!-- ============================================
+               BICICLETAS DE RUTA
+               ============================================ -->
+
+          <!-- 1. Bicicleta de ruta completa R9 -->
+          <article
+            class="product-card"
+            data-category="bicicletas-ruta"
+            data-images="https://www.yoeleo.com/cdn/shop/files/YOELEO-CHUAN-R12.jpg?v=1757800969&width=1200,https://www.yoeleo.com/cdn/shop/files/Artboard_16.jpg?v=1757801245&width=1080"
+          >
+            <div class="card__gallery">
+              <div class="card__main-img-wrap">
+                <img
+                  class="card__main-img"
+                  src="https://www.yoeleo.com/cdn/shop/files/YOELEO-CHUAN-R12.jpg?v=1757800969&width=1200"
+                  alt="Bicicleta de ruta completa R9"
+                  loading="lazy"
+                >
+              </div>
+              <div class="card__thumbnails">
+                <button class="thumb active" data-src="https://www.yoeleo.com/cdn/shop/files/YOELEO-CHUAN-R12.jpg?v=1757800969&width=1200" aria-label="Vista 1">
+                  <img src="https://www.yoeleo.com/cdn/shop/files/YOELEO-CHUAN-R12.jpg?v=1757800969&width=1200" alt="">
+                </button>
+                <button class="thumb" data-src="https://www.yoeleo.com/cdn/shop/files/Artboard_16.jpg?v=1757801245&width=1080" aria-label="Vista 2">
+                  <img src="https://www.yoeleo.com/cdn/shop/files/Artboard_16.jpg?v=1757801245&width=1080" alt="">
+                </button>
+              </div>
+            </div>
+            <div class="card__info">
+              <span class="card__category-badge">Bicicletas de ruta</span>
+              <h3 class="card__name">Bicicleta de ruta completa R9</h3>
+              <ul class="card__specs">
+                <li><span class="spec-label">Material:</span> Carbono T700 aero</li>
+                <li><span class="spec-label">Talla:</span> 48 / 51 / 54 / 56 / 58 cm</li>
+                <li><span class="spec-label">Peso:</span> 7.4 kg (talla 54, con grupo)</li>
+                <li><span class="spec-label">Transmisión:</span> Shimano 105 R7000 11v</li>
+                <li><span class="spec-label">Frenos:</span> Disco hidráulico, thru-axle 12mm</li>
+              </ul>
+              <div class="card__price"><span class="card__price-amount">USD $1,950</span></div>
+              <a href="index.html#contacto" class="btn btn--card">Consultar disponibilidad</a>
+            </div>
+          </article>
+
+          <!-- 2. Bicicleta gravel G3 -->
+          <article
+            class="product-card"
+            data-category="bicicletas-ruta"
+            data-images="https://winspace.com.au/cdn/shop/files/G3LunarGreycopy.jpg?v=1754366369&width=3200"
+          >
+            <div class="card__gallery">
+              <div class="card__main-img-wrap">
+                <img
+                  class="card__main-img"
+                  src="https://winspace.com.au/cdn/shop/files/G3LunarGreycopy.jpg?v=1754366369&width=3200"
+                  alt="Bicicleta gravel G3"
+                  loading="lazy"
+                >
+              </div>
+              <div class="card__thumbnails">
+                <button class="thumb active" data-src="https://winspace.com.au/cdn/shop/files/G3LunarGreycopy.jpg?v=1754366369&width=3200" aria-label="Vista 1">
+                  <img src="https://winspace.com.au/cdn/shop/files/G3LunarGreycopy.jpg?v=1754366369&width=3200" alt="">
+                </button>
+              </div>
+            </div>
+            <div class="card__info">
+              <span class="card__category-badge">Bicicletas de ruta</span>
+              <h3 class="card__name">Bicicleta gravel carbono G3</h3>
+              <ul class="card__specs">
+                <li><span class="spec-label">Material:</span> Carbono T700 endurance</li>
+                <li><span class="spec-label">Talla:</span> S / M / L / XL</li>
+                <li><span class="spec-label">Peso:</span> 8.1 kg (talla M, con grupo)</li>
+                <li><span class="spec-label">Transmisión:</span> SRAM Rival 1x12</li>
+                <li><span class="spec-label">Neumático máx.:</span> 700×45c / 650×50b</li>
+              </ul>
+              <div class="card__price"><span class="card__price-amount">USD $2,100</span></div>
+              <a href="index.html#contacto" class="btn btn--card">Consultar disponibilidad</a>
+            </div>
+          </article>
+
+          <!-- ============================================
+               BICICLETAS DE MONTAÑA
+               ============================================ -->
+
+          <!-- 3. Bicicleta de montaña FS 29" -->
+          <article
+            class="product-card"
+            data-category="bicicletas-montana"
+            data-images="https://xdsbikeco.com/cdn/shop/products/Rocket520mattblack.jpg?v=1749876469&width=2000"
+          >
+            <div class="card__gallery">
+              <div class="card__main-img-wrap">
+                <img
+                  class="card__main-img"
+                  src="https://xdsbikeco.com/cdn/shop/products/Rocket520mattblack.jpg?v=1749876469&width=2000"
+                  alt="Bicicleta de montaña full suspension 29 pulgadas"
+                  loading="lazy"
+                >
+              </div>
+              <div class="card__thumbnails">
+                <button class="thumb active" data-src="https://xdsbikeco.com/cdn/shop/products/Rocket520mattblack.jpg?v=1749876469&width=2000" aria-label="Vista 1">
+                  <img src="https://xdsbikeco.com/cdn/shop/products/Rocket520mattblack.jpg?v=1749876469&width=2000" alt="">
+                </button>
+              </div>
+            </div>
+            <div class="card__info">
+              <span class="card__category-badge">Bicicletas de montaña</span>
+              <h3 class="card__name">Bicicleta de montaña FS 29"</h3>
+              <ul class="card__specs">
+                <li><span class="spec-label">Material:</span> Carbono T700 full suspension</li>
+                <li><span class="spec-label">Talla:</span> S / M / L / XL</li>
+                <li><span class="spec-label">Peso:</span> 11.2 kg (talla M)</li>
+                <li><span class="spec-label">Transmisión:</span> SRAM NX Eagle 1x12</li>
+                <li><span class="spec-label">Suspensión:</span> 120mm delantera / trasera</li>
+              </ul>
+              <div class="card__price"><span class="card__price-amount">USD $1,500</span></div>
+              <a href="index.html#contacto" class="btn btn--card">Consultar disponibilidad</a>
+            </div>
+          </article>
+
+          <!-- ============================================
+               CUADROS DE CARBONO
+               ============================================ -->
+
+          <!-- 4. Cuadro T800 Aero -->
+          <article
+            class="product-card"
+            data-category="cuadros-carbono"
+            data-images="https://winspace.com.au/cdn/shop/files/IMG_7699.jpg?v=1747377285&width=3200,https://winspace.com.au/cdn/shop/files/23201752646559_.pic.jpg?v=1752646559&width=3200"
+          >
+            <div class="card__gallery">
+              <div class="card__main-img-wrap">
+                <img
+                  class="card__main-img"
+                  src="https://winspace.com.au/cdn/shop/files/IMG_7699.jpg?v=1747377285&width=3200"
+                  alt="Cuadro de carbono T800 Aero"
+                  loading="lazy"
+                >
+              </div>
+              <div class="card__thumbnails">
+                <button class="thumb active" data-src="https://winspace.com.au/cdn/shop/files/IMG_7699.jpg?v=1747377285&width=3200" aria-label="Vista 1">
+                  <img src="https://winspace.com.au/cdn/shop/files/IMG_7699.jpg?v=1747377285&width=3200" alt="">
+                </button>
+                <button class="thumb" data-src="https://winspace.com.au/cdn/shop/files/23201752646559_.pic.jpg?v=1752646559&width=3200" aria-label="Vista 2">
+                  <img src="https://winspace.com.au/cdn/shop/files/23201752646559_.pic.jpg?v=1752646559&width=3200" alt="">
+                </button>
+              </div>
+            </div>
+            <div class="card__info">
+              <span class="card__category-badge">Cuadros de carbono</span>
+              <h3 class="card__name">Cuadro de carbono T800 Aero</h3>
+              <ul class="card__specs">
+                <li><span class="spec-label">Material:</span> Fibra de carbono T800 UD</li>
+                <li><span class="spec-label">Talla:</span> 47 / 50 / 53 / 56 cm</li>
+                <li><span class="spec-label">Peso:</span> 820 g (talla 53)</li>
+                <li><span class="spec-label">Eje de pedalier:</span> BB386EVO</li>
+                <li><span class="spec-label">Compatibilidad:</span> Di2 listo, thru-axle 12mm</li>
+              </ul>
+              <div class="card__price"><span class="card__price-amount">USD $650</span></div>
+              <a href="index.html#contacto" class="btn btn--card">Consultar disponibilidad</a>
+            </div>
+          </article>
+
+          <!-- 5. Cuadro escalada SLC3 -->
+          <article
+            class="product-card"
+            data-category="cuadros-carbono"
+            data-images="https://winspace.com.au/cdn/shop/files/SLC3.0.png?v=1737587099&width=3200,https://winspace.com.au/cdn/shop/files/IMG_3069_1.jpg?v=1754637026&width=3200"
+          >
+            <div class="card__gallery">
+              <div class="card__main-img-wrap">
+                <img
+                  class="card__main-img"
+                  src="https://winspace.com.au/cdn/shop/files/SLC3.0.png?v=1737587099&width=3200"
+                  alt="Cuadro de carbono para escalada SLC3"
+                  loading="lazy"
+                >
+              </div>
+              <div class="card__thumbnails">
+                <button class="thumb active" data-src="https://winspace.com.au/cdn/shop/files/SLC3.0.png?v=1737587099&width=3200" aria-label="Vista 1">
+                  <img src="https://winspace.com.au/cdn/shop/files/SLC3.0.png?v=1737587099&width=3200" alt="">
+                </button>
+                <button class="thumb" data-src="https://winspace.com.au/cdn/shop/files/IMG_3069_1.jpg?v=1754637026&width=3200" aria-label="Vista 2">
+                  <img src="https://winspace.com.au/cdn/shop/files/IMG_3069_1.jpg?v=1754637026&width=3200" alt="">
+                </button>
+              </div>
+            </div>
+            <div class="card__info">
+              <span class="card__category-badge">Cuadros de carbono</span>
+              <h3 class="card__name">Cuadro de carbono escalada SLC3</h3>
+              <ul class="card__specs">
+                <li><span class="spec-label">Material:</span> Carbono T1000 ultra-light</li>
+                <li><span class="spec-label">Talla:</span> 47 / 50 / 52 / 54 / 56 cm</li>
+                <li><span class="spec-label">Peso:</span> 680 g (talla 52)</li>
+                <li><span class="spec-label">Eje de pedalier:</span> T47 roscado</li>
+                <li><span class="spec-label">Uso:</span> Escalada / todo tipo de terreno</li>
+              </ul>
+              <div class="card__price"><span class="card__price-amount">USD $580</span></div>
+              <a href="index.html#contacto" class="btn btn--card">Consultar disponibilidad</a>
+            </div>
+          </article>
+
+          <!-- ============================================
+               GRUPOS Y TRANSMISIÓN
+               ============================================ -->
+
+          <!-- 6. Grupo Shimano 105 R7000 -->
+          <article
+            class="product-card"
+            data-category="grupos-transmision"
+            data-images="images/grupo-shimano-105-01-a.jpg,images/grupo-shimano-105-01-b.jpg"
+          >
+            <div class="card__gallery">
+              <div class="card__main-img-wrap">
+                <img
+                  class="card__main-img"
+                  src="images/grupo-shimano-105-01-a.jpg"
+                  alt="Grupo Shimano 105 R7000 11 velocidades"
+                  loading="lazy"
+                >
+              </div>
+              <div class="card__thumbnails">
+                <button class="thumb active" data-src="images/grupo-shimano-105-01-a.jpg" aria-label="Vista 1">
+                  <img src="images/grupo-shimano-105-01-a.jpg" alt="">
+                </button>
+                <button class="thumb" data-src="images/grupo-shimano-105-01-b.jpg" aria-label="Vista 2">
+                  <img src="images/grupo-shimano-105-01-b.jpg" alt="">
+                </button>
+              </div>
+            </div>
+            <div class="card__info">
+              <span class="card__category-badge">Grupos y transmisión</span>
+              <h3 class="card__name">Grupo Shimano 105 R7000 11v</h3>
+              <ul class="card__specs">
+                <li><span class="spec-label">Velocidades:</span> 11 velocidades</li>
+                <li><span class="spec-label">Bielas:</span> 170 / 172.5 / 175mm, 50-34T</li>
+                <li><span class="spec-label">Peso total:</span> 2,336 g (con bielas y frenos)</li>
+                <li><span class="spec-label">Frenos:</span> Disco hidráulico R7070 incluido</li>
+                <li><span class="spec-label">Cassette:</span> 11-30T incluido</li>
+              </ul>
+              <div class="card__price"><span class="card__price-amount">USD $365</span></div>
+              <a href="index.html#contacto" class="btn btn--card">Consultar disponibilidad</a>
+            </div>
+          </article>
+
+          <!-- ============================================
+               RUEDAS Y LLANTAS
+               ============================================ -->
+
+          <!-- 7. Ruedas carbono 50mm -->
+          <article
+            class="product-card"
+            data-category="ruedas-llantas"
+            data-images="https://www.yoeleo.com/cdn/shop/files/QIANKUN.jpg?v=1757768861&width=3000,https://www.yoeleo.com/cdn/shop/files/QianKun_wheels.jpg?v=1757818500&width=1200,https://winspace.com.au/cdn/shop/files/Kronos_Wheel_Front_Page.jpg?v=1747708619&width=3200"
+          >
+            <div class="card__gallery">
+              <div class="card__main-img-wrap">
+                <img
+                  class="card__main-img"
+                  src="https://www.yoeleo.com/cdn/shop/files/QIANKUN.jpg?v=1757768861&width=3000"
+                  alt="Ruedas de carbono tubeless 50mm"
+                  loading="lazy"
+                >
+              </div>
+              <div class="card__thumbnails">
+                <button class="thumb active" data-src="https://www.yoeleo.com/cdn/shop/files/QIANKUN.jpg?v=1757768861&width=3000" aria-label="Vista 1">
+                  <img src="https://www.yoeleo.com/cdn/shop/files/QIANKUN.jpg?v=1757768861&width=3000" alt="">
+                </button>
+                <button class="thumb" data-src="https://www.yoeleo.com/cdn/shop/files/QianKun_wheels.jpg?v=1757818500&width=1200" aria-label="Vista 2">
+                  <img src="https://www.yoeleo.com/cdn/shop/files/QianKun_wheels.jpg?v=1757818500&width=1200" alt="">
+                </button>
+                <button class="thumb" data-src="https://winspace.com.au/cdn/shop/files/Kronos_Wheel_Front_Page.jpg?v=1747708619&width=3200" aria-label="Vista 3">
+                  <img src="https://winspace.com.au/cdn/shop/files/Kronos_Wheel_Front_Page.jpg?v=1747708619&width=3200" alt="">
+                </button>
+              </div>
+            </div>
+            <div class="card__info">
+              <span class="card__category-badge">Ruedas y llantas</span>
+              <h3 class="card__name">Ruedas de carbono tubeless 50mm</h3>
+              <ul class="card__specs">
+                <li><span class="spec-label">Material:</span> Carbono T700 prepreg</li>
+                <li><span class="spec-label">Perfil:</span> 50mm clincher / tubeless ready</li>
+                <li><span class="spec-label">Peso:</span> 1,480 g el par</li>
+                <li><span class="spec-label">Medida:</span> 700c, ancho interno 21mm</li>
+                <li><span class="spec-label">Compatibilidad:</span> Shimano / SRAM 11-12v, XDR</li>
+              </ul>
+              <div class="card__price"><span class="card__price-amount">USD $730</span></div>
+              <a href="index.html#contacto" class="btn btn--card">Consultar disponibilidad</a>
+            </div>
+          </article>
+
+          <!-- ============================================
+               MANUBRIOS Y POTENCIAS
+               ============================================ -->
+
+          <!-- 8. Manillar aero carbono 420mm -->
+          <article
+            class="product-card"
+            data-category="manubrios-potencias"
+            data-images="https://omo-oss-image.thefastimg.com/portal-saas/pg2024080215481350529/cms/image/090fccb6-2367-4b4d-9660-d73e7679f9e5.jpg"
+          >
+            <div class="card__gallery">
+              <div class="card__main-img-wrap">
+                <img
+                  class="card__main-img"
+                  src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024080215481350529/cms/image/090fccb6-2367-4b4d-9660-d73e7679f9e5.jpg"
+                  alt="Manillar aero de carbono 420mm"
+                  loading="lazy"
+                >
+              </div>
+              <div class="card__thumbnails">
+                <button class="thumb active" data-src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024080215481350529/cms/image/090fccb6-2367-4b4d-9660-d73e7679f9e5.jpg" aria-label="Vista 1">
+                  <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024080215481350529/cms/image/090fccb6-2367-4b4d-9660-d73e7679f9e5.jpg" alt="">
+                </button>
+              </div>
+            </div>
+            <div class="card__info">
+              <span class="card__category-badge">Manubrios y potencias</span>
+              <h3 class="card__name">Manillar aero de carbono 420mm</h3>
+              <ul class="card__specs">
+                <li><span class="spec-label">Material:</span> Carbono T800 UD</li>
+                <li><span class="spec-label">Ancho:</span> 380 / 400 / 420 / 440mm</li>
+                <li><span class="spec-label">Peso:</span> 195 g (420mm)</li>
+                <li><span class="spec-label">Diámetro central:</span> Ø31.8mm</li>
+                <li><span class="spec-label">Drop / reach:</span> 125mm / 80mm</li>
+              </ul>
+              <div class="card__price"><span class="card__price-amount">USD $190</span></div>
+              <a href="index.html#contacto" class="btn btn--card">Consultar disponibilidad</a>
+            </div>
+          </article>
+
+          <!-- 9. Potencia aero de carbono 100mm -->
+          <article
+            class="product-card"
+            data-category="manubrios-potencias"
+            data-images="images/potencia-aero-01-a.jpg,images/potencia-aero-01-b.jpg"
+          >
+            <div class="card__gallery">
+              <div class="card__main-img-wrap">
+                <img
+                  class="card__main-img"
+                  src="images/potencia-aero-01-a.jpg"
+                  alt="Potencia aero de carbono 100mm"
+                  loading="lazy"
+                >
+              </div>
+              <div class="card__thumbnails">
+                <button class="thumb active" data-src="images/potencia-aero-01-a.jpg" aria-label="Vista 1">
+                  <img src="images/potencia-aero-01-a.jpg" alt="">
+                </button>
+                <button class="thumb" data-src="images/potencia-aero-01-b.jpg" aria-label="Vista 2">
+                  <img src="images/potencia-aero-01-b.jpg" alt="">
+                </button>
+              </div>
+            </div>
+            <div class="card__info">
+              <span class="card__category-badge">Manubrios y potencias</span>
+              <h3 class="card__name">Potencia aero de carbono 100mm</h3>
+              <ul class="card__specs">
+                <li><span class="spec-label">Material:</span> Carbono 3K</li>
+                <li><span class="spec-label">Longitud:</span> 80 / 90 / 100 / 110 / 120mm</li>
+                <li><span class="spec-label">Peso:</span> 130 g (100mm)</li>
+                <li><span class="spec-label">Diámetro manillar:</span> Ø31.8mm</li>
+                <li><span class="spec-label">Diámetro carga:</span> Ø28.6mm (1-1/8")</li>
+              </ul>
+              <div class="card__price"><span class="card__price-amount">USD $120</span></div>
+              <a href="index.html#contacto" class="btn btn--card">Consultar disponibilidad</a>
+            </div>
+          </article>
+
+          <!-- ============================================
+               SILLINES Y TIJAS
+               ============================================ -->
+
+          <!-- 10. Sillín de carrera ultraligero -->
+          <article
+            class="product-card"
+            data-category="sillines-tijas"
+            data-images="https://omo-oss-image.thefastimg.com/portal-saas/pg2024080215481350529/cms/image/e153fb81-94e4-4fcf-a5bc-e9e55629d48a.jpg"
+          >
+            <div class="card__gallery">
+              <div class="card__main-img-wrap">
+                <img
+                  class="card__main-img"
+                  src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024080215481350529/cms/image/e153fb81-94e4-4fcf-a5bc-e9e55629d48a.jpg"
+                  alt="Sillín de carrera ultraligero"
+                  loading="lazy"
+                >
+              </div>
+              <div class="card__thumbnails">
+                <button class="thumb active" data-src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024080215481350529/cms/image/e153fb81-94e4-4fcf-a5bc-e9e55629d48a.jpg" aria-label="Vista 1">
+                  <img src="https://omo-oss-image.thefastimg.com/portal-saas/pg2024080215481350529/cms/image/e153fb81-94e4-4fcf-a5bc-e9e55629d48a.jpg" alt="">
+                </button>
+              </div>
+            </div>
+            <div class="card__info">
+              <span class="card__category-badge">Sillines y tijas</span>
+              <h3 class="card__name">Sillín de carrera ultraligero</h3>
+              <ul class="card__specs">
+                <li><span class="spec-label">Material:</span> Base de carbono + espuma de alta densidad</li>
+                <li><span class="spec-label">Ancho:</span> 143mm</li>
+                <li><span class="spec-label">Peso:</span> 168 g</li>
+                <li><span class="spec-label">Carril:</span> Universal doble</li>
+                <li><span class="spec-label">Uso:</span> Ruta / competición</li>
+              </ul>
+              <div class="card__price"><span class="card__price-amount">USD $145</span></div>
+              <a href="index.html#contacto" class="btn btn--card">Consultar disponibilidad</a>
+            </div>
+          </article>
+
+          <!-- 11. Tija de carbono 27.2mm -->
+          <article
+            class="product-card"
+            data-category="sillines-tijas"
+            data-images="images/tija-carbono-01-a.jpg,images/tija-carbono-01-b.jpg"
+          >
+            <div class="card__gallery">
+              <div class="card__main-img-wrap">
+                <img
+                  class="card__main-img"
+                  src="images/tija-carbono-01-a.jpg"
+                  alt="Tija de carbono 27.2mm"
+                  loading="lazy"
+                >
+              </div>
+              <div class="card__thumbnails">
+                <button class="thumb active" data-src="images/tija-carbono-01-a.jpg" aria-label="Vista 1">
+                  <img src="images/tija-carbono-01-a.jpg" alt="">
+                </button>
+                <button class="thumb" data-src="images/tija-carbono-01-b.jpg" aria-label="Vista 2">
+                  <img src="images/tija-carbono-01-b.jpg" alt="">
+                </button>
+              </div>
+            </div>
+            <div class="card__info">
+              <span class="card__category-badge">Sillines y tijas</span>
+              <h3 class="card__name">Tija de carbono 27.2mm</h3>
+              <ul class="card__specs">
+                <li><span class="spec-label">Material:</span> Carbono UD monocapa</li>
+                <li><span class="spec-label">Diámetro:</span> 27.2mm</li>
+                <li><span class="spec-label">Peso:</span> 180 g (350mm largo)</li>
+                <li><span class="spec-label">Largo:</span> 300 / 350 / 400mm</li>
+                <li><span class="spec-label">Offset:</span> 0mm / 25mm disponible</li>
+              </ul>
+              <div class="card__price"><span class="card__price-amount">USD $90</span></div>
+              <a href="index.html#contacto" class="btn btn--card">Consultar disponibilidad</a>
+            </div>
+          </article>
+
+          <!-- ============================================
+               ACCESORIOS Y COMPONENTES VARIOS
+               ============================================ -->
+
+          <!-- 12. Kit accesorios aero -->
+          <article
+            class="product-card"
+            data-category="accesorios"
+            data-images="https://www.yoeleo.com/cdn/shop/files/20251011-154040.png?v=1760168588&width=2000"
+          >
+            <div class="card__gallery">
+              <div class="card__main-img-wrap">
+                <img
+                  class="card__main-img"
+                  src="https://www.yoeleo.com/cdn/shop/files/20251011-154040.png?v=1760168588&width=2000"
+                  alt="Kit de accesorios aero para ciclismo"
+                  loading="lazy"
+                >
+              </div>
+              <div class="card__thumbnails">
+                <button class="thumb active" data-src="https://www.yoeleo.com/cdn/shop/files/20251011-154040.png?v=1760168588&width=2000" aria-label="Vista 1">
+                  <img src="https://www.yoeleo.com/cdn/shop/files/20251011-154040.png?v=1760168588&width=2000" alt="">
+                </button>
+              </div>
+            </div>
+            <div class="card__info">
+              <span class="card__category-badge">Accesorios y componentes</span>
+              <h3 class="card__name">Kit accesorios aero</h3>
+              <ul class="card__specs">
+                <li><span class="spec-label">Incluye:</span> Bidón aero, portabidón carbono, caja de herramientas</li>
+                <li><span class="spec-label">Material:</span> Polímero de alta resistencia</li>
+                <li><span class="spec-label">Peso total:</span> 210 g</li>
+                <li><span class="spec-label">Montaje:</span> Estándar 2 tornillos M5</li>
+                <li><span class="spec-label">Color:</span> Negro mate</li>
+              </ul>
+              <div class="card__price"><span class="card__price-amount">USD $48</span></div>
+              <a href="index.html#contacto" class="btn btn--card">Consultar disponibilidad</a>
+            </div>
+          </article>
+
+        </div><!-- /#productGrid -->
+
+        <p class="no-results hidden" id="noResults" role="status">
+          No se encontraron productos en esta categoría.
+        </p>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================================================
+       FOOTER
+       =================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer__inner">
+      <div class="footer__brand">Bicis Chinas <span>Pro</span></div>
+      <nav class="footer__nav" aria-label="Navegación de pie de página">
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="index.html#contacto">Contacto</a>
+      </nav>
+      <p class="footer__legal">
+        Solo catálogo de referencia. Precios en USD orientativos, sujetos a disponibilidad. Bicis Chinas Pro &copy; <span id="year"></span>
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
