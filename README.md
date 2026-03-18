@@ -8,13 +8,27 @@ Catálogo web estático de bicicletas y componentes de alto rendimiento. **Solo 
 
 ```
 BikeProject1/
-├── index.html        → Página principal (hero, manifiesto, categorías, contacto)
+├── index.html        → Página principal (hero, manifiesto, categorías, productos, cómo comprar, blog, contacto)
 ├── catalogo.html     → Catálogo completo con filtro por categoría
+├── blog.html         → Página completa del blog
+├── blog-data.js      → Entradas del blog (editar aquí para publicar nuevos artículos)
 ├── style.css         → Todos los estilos
-├── script.js         → JavaScript vanilla (menú, switcher de imágenes, filtros)
+├── script.js         → JavaScript vanilla (menú, switcher de imágenes, filtros, renderizado del blog)
 ├── README.md         → Este archivo
-└── images/           → Carpeta de imágenes locales (placeholder)
+└── images/           → Carpeta de imágenes locales
 ```
+
+---
+
+## Cómo publicar una nueva entrada en el blog
+
+1. Abre `blog-data.js`.
+2. Copia el bloque de plantilla que está en los comentarios al inicio del archivo.
+3. Pégalo al **inicio** del array `BLOG_POSTS` (justo después del `[`).
+4. Rellena los campos: título, fecha, imagen, resumen y párrafos.
+5. Guarda, haz commit y push → Netlify redespliega automáticamente.
+
+La entrada más nueva siempre aparece primero. No hay que tocar ningún otro archivo.
 
 ---
 
@@ -106,20 +120,19 @@ Usa exactamente estos valores en el atributo `data-category` de cada tarjeta.
    </a>
    ```
 
-3. **Usa el mismo slug** (`mi-nueva-categoria`) en el `data-category` de los productos de esa categoría. No necesitas tocar el JavaScript — el filtro es dinámico.
+3. **Usa el mismo slug** en el `data-category` de los productos. No hay que tocar el JavaScript — el filtro es dinámico.
 
 ---
 
-## Cómo cambiar las imágenes (reemplazar placeholders)
+## Cómo cambiar las imágenes
 
-Las imágenes de referencia actuales son URLs externas de las páginas de Yoeleo, Winspace, Quick Pro y XDS. Para reemplazarlas con fotos propias:
+Las imágenes actuales son URLs externas (Yoeleo, Winspace, XDS). Para reemplazarlas con fotos propias:
 
-1. Guarda tu imagen en la carpeta `/images/` con un nombre descriptivo, por ejemplo: `cuadro-carbono-t800-01-a.jpg`.
-2. En la tarjeta del producto, reemplaza el valor del atributo `src` y `data-src` con la ruta local:
+1. Guarda la imagen en `/images/` con un nombre descriptivo.
+2. Reemplaza el `src` y `data-src` en la tarjeta del producto:
    ```html
    src="images/cuadro-carbono-t800-01-a.jpg"
    ```
-3. Haz lo mismo en las miniaturas (`.thumb`).
 
 **Convención de nombres sugerida:**
 ```
@@ -127,21 +140,19 @@ Las imágenes de referencia actuales son URLs externas de las páginas de Yoeleo
 Ejemplos:
   cuadro-carbono-aero-01-a.jpg   ← vista principal
   cuadro-carbono-aero-01-b.jpg   ← vista lateral
-  cuadro-carbono-aero-01-c.jpg   ← detalle
 ```
 
-**Tamaño recomendado:** 800×600 px mínimo, proporción 4:3. Máximo 200 KB por imagen (usa [Squoosh](https://squoosh.app) para comprimir).
+**Tamaño recomendado:** 800×600 px mínimo. Máximo 200 KB (usa [Squoosh](https://squoosh.app) para comprimir).
 
 ---
 
 ## Cómo cambiar el color de acento
 
-En `style.css`, en la parte superior del archivo, cambia el valor de `--color-accent`:
+En `style.css`, al inicio del archivo, cambia `--color-accent`:
 
 ```css
 :root {
-  --color-accent: #f5c200;  /* amarillo eléctrico (predeterminado) */
-  /* Opciones alternativas: */
+  --color-accent: #f5c200;  /* amarillo (predeterminado) */
   /* --color-accent: #e8002a;  rojo */
   /* --color-accent: #ffffff;  blanco */
 }
@@ -168,23 +179,17 @@ Para actualizar el número de WhatsApp, correo o Instagram, edita la sección `#
 
 ## Despliegue
 
-### Netlify (más fácil)
-1. Arrastra la carpeta `BikeProject1/` al panel de Netlify en [app.netlify.com](https://app.netlify.com).
-2. Netlify detecta automáticamente que es un sitio estático.
-3. El sitio queda publicado en segundos en una URL `*.netlify.app`.
+El sitio está conectado a GitHub. Cada push a `main` redespliega automáticamente en Netlify.
 
-### GitHub Pages
-1. Sube la carpeta a un repositorio de GitHub.
-2. Ve a **Settings → Pages**.
-3. En **Source**, selecciona la rama `main` y la carpeta `/` (raíz).
-4. Guarda. El sitio queda disponible en `https://[tu-usuario].github.io/[nombre-repo]/`.
+```
+Editar archivos → commit → git push → Netlify redespliega (~30 s)
+```
 
-### Cualquier hosting estático
-Sin build, sin dependencias. Sube los 4 archivos + la carpeta `images/` tal cual.
+Repositorio: `https://github.com/andrefermh-glitch/bikeproject`
 
 ---
 
-## Para habilitar envío real del formulario de contacto (Netlify Forms)
+## Para habilitar envío real del formulario (Netlify Forms)
 
 Agrega los atributos `name` y `netlify` al `<form>` en `index.html`:
 
@@ -192,7 +197,7 @@ Agrega los atributos `name` y `netlify` al `<form>` en `index.html`:
 <form class="contacto__form" id="contactoForm" name="contacto" netlify novalidate>
 ```
 
-Netlify detectará el formulario automáticamente y recibirás los mensajes en el panel de Netlify.
+Netlify detectará el formulario y recibirás los mensajes en el panel de Netlify.
 
 ---
 
