@@ -57,7 +57,7 @@ p { margin: 0; }
   --space-md:  1rem;
   --space-lg:  2rem;
   --space-xl:  4rem;
-  --space-xxl: 8rem;
+  --space-xxl: 5.5rem;
 
   /* Layout */
   --max-width:       1200px;
