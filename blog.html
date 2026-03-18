@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Blog de Bicis Chinas Pro — Noticias sobre marcas de ciclismo chinas, resultados en carreras y novedades del sector.">
+  <title>Blog — Bicis Chinas Pro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,900;1,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-blog">
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <nav class="nav" role="navigation" aria-label="Navegación principal">
+      <a href="index.html" class="nav__logo">Bicis Chinas <span>Pro</span></a>
+      <ul class="nav__links" role="list">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="index.html#como-comprar">Cómo comprar</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="index.html#contacto">Contacto</a></li>
+      </ul>
+      <button class="nav__hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <nav class="nav__mobile-menu" id="mobileMenu" aria-label="Menú móvil" role="navigation">
+    <a href="index.html">Inicio</a>
+    <a href="catalogo.html">Catálogo</a>
+    <a href="index.html#como-comprar">Cómo comprar</a>
+    <a href="blog.html">Blog</a>
+    <a href="index.html#contacto">Contacto</a>
+  </nav>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero" aria-label="Blog">
+      <div class="page-hero__inner">
+        <p class="hero__eyebrow">Noticias · Ciclismo chino · WorldTour</p>
+        <h1>Blog</h1>
+        <p>Novedades sobre marcas chinas de ciclismo, resultados en carrera y lo que está pasando en la industria.</p>
+      </div>
+    </section>
+
+    <!-- BLOG POSTS -->
+    <section class="blog-section" aria-label="Artículos del blog">
+      <div class="blog-section__inner">
+        <div class="blog-full-list" id="blogFullList">
+          <!-- Renderizado por JavaScript desde blog-data.js -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer__inner">
+      <div class="footer__brand">Bicis Chinas <span>Pro</span></div>
+      <nav class="footer__nav" aria-label="Navegación de pie de página">
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="blog.html">Blog</a>
+        <a href="index.html#contacto">Contacto</a>
+      </nav>
+      <p class="footer__legal">
+        Solo catálogo de referencia. Precios en USD orientativos, sujetos a disponibilidad. Bicis Chinas Pro &copy; <span id="year"></span>
+      </p>
+    </div>
+  </footer>
+
+  <script src="blog-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

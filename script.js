@@ -228,11 +228,62 @@ function initUtils() {
 }
 
 /* -------------------------------------------------------
+   5. BLOG (lee BLOG_POSTS de blog-data.js y renderiza)
+   ------------------------------------------------------- */
+function initBlog() {
+  if (typeof BLOG_POSTS === 'undefined') return;
+
+  // --- Preview en index.html (últimas 2 entradas) ---
+  var previewGrid = document.getElementById('blogPreviewGrid');
+  if (previewGrid) {
+    var preview = BLOG_POSTS.slice(0, 2);
+    previewGrid.innerHTML = preview.map(function (post) {
+      return (
+        '<article class="blog-card">' +
+          '<a href="blog.html#' + post.id + '" class="blog-card__img-wrap">' +
+            '<img src="' + post.image + '" alt="' + post.imageAlt + '" loading="lazy">' +
+          '</a>' +
+          '<div class="blog-card__body">' +
+            '<span class="blog-card__date">' + post.dateLabel + '</span>' +
+            '<h3 class="blog-card__title"><a href="blog.html#' + post.id + '">' + post.title + '</a></h3>' +
+            '<p class="blog-card__excerpt">' + post.excerpt + '</p>' +
+            '<a href="blog.html#' + post.id + '" class="blog-card__read-more">Leer más →</a>' +
+          '</div>' +
+        '</article>'
+      );
+    }).join('');
+  }
+
+  // --- Lista completa en blog.html ---
+  var fullList = document.getElementById('blogFullList');
+  if (fullList) {
+    fullList.innerHTML = BLOG_POSTS.map(function (post) {
+      var paragraphs = post.content.map(function (p) {
+        return '<p>' + p + '</p>';
+      }).join('');
+      return (
+        '<article class="blog-article" id="' + post.id + '">' +
+          '<div class="blog-article__img-wrap">' +
+            '<img src="' + post.image + '" alt="' + post.imageAlt + '" loading="lazy">' +
+          '</div>' +
+          '<div class="blog-article__body">' +
+            '<span class="blog-card__date">' + post.dateLabel + '</span>' +
+            '<h2 class="blog-article__title">' + post.title + '</h2>' +
+            '<div class="blog-article__content">' + paragraphs + '</div>' +
+          '</div>' +
+        '</article>'
+      );
+    }).join('');
+  }
+}
+
+/* -------------------------------------------------------
    INICIALIZACIÓN
    ------------------------------------------------------- */
 document.addEventListener('DOMContentLoaded', function () {
   initNav();
   initImageSwitchers();
   initCategoryFilter();
+  initBlog();
   initUtils();
 });

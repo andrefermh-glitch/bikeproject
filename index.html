@@ -23,6 +23,7 @@
         <li><a href="index.html">Inicio</a></li>
         <li><a href="catalogo.html">Catálogo</a></li>
         <li><a href="#como-comprar">Cómo comprar</a></li>
+        <li><a href="blog.html">Blog</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
 
@@ -39,6 +40,7 @@
     <a href="index.html">Inicio</a>
     <a href="catalogo.html">Catálogo</a>
     <a href="#como-comprar">Cómo comprar</a>
+    <a href="blog.html">Blog</a>
     <a href="#contacto">Contacto</a>
   </nav>
 
@@ -294,7 +296,23 @@
     </section>
 
     <!-- ===================================================
-         SECCIÓN 5: CÓMO COMPRAR
+         SECCIÓN 5: BLOG PREVIEW
+         =================================================== -->
+    <section id="blog" aria-labelledby="blog-titulo">
+      <div class="blog-preview__inner">
+        <h2 class="section-title" id="blog-titulo">Blog</h2>
+        <p class="comprar__intro">Noticias sobre ciclismo chino, resultados en carrera y novedades del sector.</p>
+        <div class="blog-preview-grid" id="blogPreviewGrid">
+          <!-- Renderizado por JavaScript desde blog-data.js -->
+        </div>
+        <div class="comprar__cta" style="margin-top: var(--space-xl);">
+          <a href="blog.html" class="btn btn--outline">Ver todos los artículos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================
+         SECCIÓN 6: CÓMO COMPRAR
          =================================================== -->
     <section id="como-comprar" aria-labelledby="comprar-titulo">
       <div class="comprar__inner">
@@ -462,6 +480,7 @@
     </div>
   </footer>
 
+  <script src="blog-data.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
